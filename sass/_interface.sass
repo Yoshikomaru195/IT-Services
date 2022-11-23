@@ -1,0 +1,45 @@
+*
+  box-sizing: border-box
+  font-family: 'Pacifico'
+body
+  background: url('../img/bg.jpg') no-repeat
+  background-size: cover
+  +bold
+.container
+  width: 1170px
+  margin: auto
+.header
+  &__title
+    display: block
+    padding-top: 20px
+    text-align: center
+    color: #fff1bf
+    +bold
+.section
+  &-blocks
+    &_items
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-evenly
+      align-items: center
+      margin-top: 75px
+    &__button
+      display: block
+      margin-bottom: 30px
+      flex-basis: 38%
+      padding: 60px 10px
+      border-radius: 10px
+      color: white
+      text-decoration: none
+      font-family: 'Montserrat', sans-serif
+      text-transform: uppercase
+      letter-spacing: 2px
+      background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%)
+      background-size: 200% auto
+      box-shadow: 0 0 20px rgba(0, 0, 0, .1)
+      transition: .5s
+      +reg
+      &:hover
+        background-position: right center
+        box-shadow: 0 0 10px 0 #F137A6 inset, 0 0 10px 4px #F137A6
+        
