@@ -1,19 +1,20 @@
 @font-face {
-    font-family: 'Pacifico';
-    src: url('../fonts/Pacifico/Pacifico-Regular.ttf');
+    font-family: 'Play';
+    src: url('../fonts/Play/Play-Bold.ttf');
+    src: url('../fonts/Play/Play-Regular.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @mixin bold {
-    font-family: 'Pacifico', sans-serif;
+    font-family: 'Play-Bold', sans-serif;
     font-size: 50px;
     font-weight: 700;
   }
 
 @mixin reg {
-    font-family: 'Pacifico', sans-serif;
+    font-family: 'Play-Regular', sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: 400;
