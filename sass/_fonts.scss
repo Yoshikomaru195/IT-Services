@@ -1,21 +1,22 @@
 @font-face {
-    font-family: 'Play';
-    src: url('../fonts/Play/Play-Bold.ttf');
-    src: url('../fonts/Play/Play-Regular.ttf');
+    font-family: 'Source Sans Pro', sans-serif;
+    src: url('../fonts/Play/UbuntuCondensed-Regular.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @mixin bold {
-    font-family: 'Play-Bold', sans-serif;
-    font-size: 50px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 27px;
     font-weight: 700;
   }
 
 @mixin reg {
-    font-family: 'Play-Regular', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: 400;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap')
