@@ -11,7 +11,6 @@ a
   text-decoration: none
 .container
   margin: auto
-  // max-width: 1400px
 .main
   width: 60%
   position: absolute
@@ -34,7 +33,7 @@ a
   text-align: center
   flex-basis: 33%
   &__text
-    padding: 20px 10px
+    padding: 0px 10px
     display: flex
     justify-content: center
     align-items: center
@@ -90,20 +89,22 @@ a
   body
     background-size: unset
   .main
-    width: 80%
+    width: 60%
+  .btn
+    max-width: 400px
+    max-height: 200px
+    &__text
+      line-height: 32px
+      font-size: 25px
     
 @media (max-width: 1700px)
   .main
-    width: 75%
+    width: 80%
   .btn
     &__text
-      line-height: 36px
+      line-height: 32px
       letter-spacing: 1px
-      font-size: 25px
-  .section
-    &-blocks
-      &__button
-        // min-height: 225px
+      font-size: 23px
 
 @media (max-width: 1500px)
   .main
