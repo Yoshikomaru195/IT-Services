@@ -21,7 +21,7 @@ a
   transform: translate(-50%,-50%)
 .btn
   padding: 30px 10px
-  width: 600px
+  // width: 600px
   height: 300px
   border-radius: 20px
   transition: all 0.3s ease
@@ -64,14 +64,14 @@ a
       width: 70%
       height: 100%
       background: url('../img/vmware-horizon.png') no-repeat 50%
-      background-size: 220px
+      background-size: 160px
   &-outlook
     display: flex
     &__icon
       width: 70%
       height: 100%
       background: url('../img/outlook.png') no-repeat 50%
-      background-size: 110px
+      background-size: 130px
 
 .section
   &-blocks
@@ -108,7 +108,26 @@ a
 
 @media (max-width: 1500px)
   .main
-    width: 75%
+    width: 80%
+  .btn
+      &-info
+        display: flex
+        &__icon
+          background-size: 120px
+      &-vmware
+        display: flex
+        &__icon
+          width: 70%
+          height: 100%
+          background: url('../img/vmware-horizon.png') no-repeat 50%
+          background-size: 120px
+      &-outlook
+        display: flex
+        &__icon
+          width: 70%
+          height: 100%
+          background: url('../img/outlook.png') no-repeat 50%
+          background-size: 110px
 
 @media (max-width: 1200px)
   .section
@@ -117,28 +136,73 @@ a
         min-height: 225px
         flex-basis: 48%
 
-@media (max-width: 678px)
+@media (max-width: 900px)
   .btn
     &__text
       line-height: 30px
       letter-spacing: 1px
       font-size: 22px
+    &-vmware
+      &__icon
+        display: none
+    &-outlook
+      &__icon
+        display: none
+    &-info
+      &__icon
+        display: none
 
 @media (max-width: 515px)
   .main
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
     width: 80%
+    position: relative
+    top: 0%
+    left: 0%
+    -webkit-transform: translate(0%,0%)
+    -ms-transform: translate(0%,0%)
+    transform: translate(0%,0%)
   .section
     &-blocks
       &__button
         min-height: 100px
         flex-basis: 100%
   .btn
+    max-height: 150px
     &-info 
-      &:hover
-        background-size: 100px
+      &__icon
+        display: block
+        width: 50%
+        background-size: 80px
     &-outlook
-      &:hover
-        background-size: 100px
+      &__icon
+        display: block
+        width: 50%
+        background-size: 90px
     &-vmware
-      &:hover
-        background-size: 150px
+      &__icon
+        display: block
+        width: 50%
+        background-size: 100px
+    &__text
+      max-width: 255px
+      line-height: 27px
+      letter-spacing: 0px
+      font-size: 20px
+
+@media (max-width: 370px)
+  .main
+    width: 95%
+  .btn
+    &-vmware
+      &__icon
+        display: none
+    &-outlook
+      &__icon
+        display: none
+    &-info
+      &__icon
+        display: none
