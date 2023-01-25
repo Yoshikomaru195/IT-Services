@@ -45,12 +45,9 @@ a
     font-size: 28px
     font-weight: 700
     +bold
-    &:hover
-      color: #fff
   &:hover
     background: #2EE59D
     box-shadow: 0 15px 20px rgba(46, 229, 157, .4)
-    color: white
   &-info
     display: flex
     &__icon
@@ -72,6 +69,13 @@ a
       height: 100%
       background: url('../img/outlook.png') no-repeat 50%
       background-size: 130px
+  &-otrs
+    display: flex
+    &__icon
+      width: 70%
+      height: 100%
+      background: url('../img/otrs.png') no-repeat 50%
+      background-size: 140px
 
 .section
   &-blocks
@@ -111,22 +115,16 @@ a
     width: 80%
   .btn
       &-info
-        display: flex
         &__icon
           background-size: 120px
       &-vmware
-        display: flex
         &__icon
-          width: 70%
-          height: 100%
-          background: url('../img/vmware-horizon.png') no-repeat 50%
           background-size: 120px
       &-outlook
-        display: flex
         &__icon
-          width: 70%
-          height: 100%
-          background: url('../img/outlook.png') no-repeat 50%
+          background-size: 110px
+      &-otrs 
+        &__icon
           background-size: 110px
 
 @media (max-width: 1200px)
@@ -151,6 +149,9 @@ a
     &-info
       &__icon
         display: none
+    &-otrs 
+      &__icon
+        display: none
 
 @media (max-width: 515px)
   .main
@@ -172,6 +173,9 @@ a
         flex-basis: 100%
   .btn
     max-height: 150px
+    &:hover
+      background-color: #333
+      box-shadow: 0 0
     &-info 
       &__icon
         display: block
@@ -183,6 +187,11 @@ a
         width: 50%
         background-size: 90px
     &-vmware
+      &__icon
+        display: block
+        width: 50%
+        background-size: 100px
+    &-otrs 
       &__icon
         display: block
         width: 50%
@@ -204,5 +213,8 @@ a
       &__icon
         display: none
     &-info
+      &__icon
+        display: none
+    &-otrs 
       &__icon
         display: none
