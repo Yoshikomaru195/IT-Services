@@ -123,33 +123,34 @@ a
   .main
     width: 80%
   .btn
+    max-height: 165px
     &__text
-      line-height: 32px
+      line-height: 25px
       letter-spacing: 1px
-      font-size: 23px
+      font-size: 20px
 
 @media (max-width: 1500px)
   .main
     width: 80%
   .btn
-      &-info
-        &__icon
-          background-size: 120px
-      &-vmware
-        &__icon
-          background-size: 120px
-      &-outlook
-        &__icon
-          background-size: 110px
-      &-otrs 
-        &__icon
-          background-size: 110px
-      &-helpdesk
-        &__icon
-          background-size: 110px
-      &-cloud
-        &__icon
-          background-size: 110px
+    &-info
+      &__icon
+        background-size: 100px
+    &-vmware
+      &__icon
+          background-size: 100px
+    &-outlook
+      &__icon
+          background-size: 90px
+    &-otrs 
+      &__icon
+          background-size: 90px
+    &-helpdesk
+      &__icon
+          background-size: 90px
+    &-cloud
+      &__icon
+          background-size: 90px
 
 @media (max-width: 1300px)
   .main
@@ -199,7 +200,7 @@ a
   .section
     &-blocks
       &__button
-        min-height: 75px
+        min-height: 150px
         flex-basis: 100%
   .btn
     max-height: 150px
@@ -245,6 +246,10 @@ a
 @media (max-width: 370px)
   .main
     width: 95%
+  .section
+    &-blocks
+      &__button
+        min-height: 75px
   .btn
     padding: 10px 5px
     max-height: 50px
