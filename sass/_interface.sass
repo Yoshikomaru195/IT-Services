@@ -10,10 +10,9 @@ body
   background-size: cover
 
 a
-
   text-decoration: none
+
 .container
-  
   margin: auto
   
 .main
@@ -26,6 +25,7 @@ a
   transform: translate(-50%,-50%)
 
 .btn
+  max-height: 200px
   padding: 30px 10px
   border-radius: 20px
   transition: all 0.3s ease
@@ -169,7 +169,12 @@ a
     &-blocks
       &__button
         min-height: 150px
-        flex-basis: 48%
+        flex-basis: 49%
+  .btn
+    &-cloud
+      &__item
+        flex-basis: 100%
+        margin-right: 10px
 
 @media (max-width: 900px)
   .btn
@@ -236,7 +241,7 @@ a
       &__icon
         display: block
         width: 50%
-        background-size: 100px
+        background-size: 80px
     &__text
       max-width: 255px
       line-height: 27px
@@ -289,22 +294,18 @@ a
         background-size: 35px
     &-info
       &__icon
-        // display: none
         width: 37%
         background-size: 35px
     &-otrs 
       &__icon
-        // display: none
         width: 35%
         background-size: 35px
     &-helpdesk
       &__icon
-        // display: none
         width: 37%
         background-size: 35px
     &-cloud
       &__icon
-        // display: none
         width: 37%
         background-size: 35px
   .section
