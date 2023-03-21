@@ -25,11 +25,11 @@ a
   transform: translate(-50%,-50%)
 
 .btn
-  max-height: 200px
+  min-height: 200px
   padding: 30px 10px
   border-radius: 20px
   transition: all 0.3s ease
-  background-color: #333
+  background-color: rgba(51, 51, 51, 0.8)
   outline: none
   display: flex
   justify-content: center
@@ -58,42 +58,61 @@ a
       width: 70%
       height: 100%
       background: url('../img/info.svg') no-repeat 50%
-      background-size: 120px
+      background-size: 100px
   &-vmware
     display: flex
     &__icon
       width: 70%
       height: 100%
       background: url('../img/vmware-horizon.png') no-repeat 50%
-      background-size: 160px
+      background-size: 120px
   &-outlook
     display: flex
     &__icon
       width: 70%
       height: 100%
       background: url('../img/outlook.png') no-repeat 50%
-      background-size: 130px
+      background-size: 100px
   &-otrs
     display: flex
     &__icon
       width: 70%
       height: 100%
       background: url('../img/otrs.png') no-repeat 50%
-      background-size: 140px
+      background-size: 100px
   &-helpdesk
     display: flex
     &__icon
       width: 70%
       height: 100%
       background: url('../img/help-desk.png') no-repeat 50%
-      background-size: 120px
+      background-size: 100px
   &-cloud
     display: flex
     &__icon
       width: 70%
       height: 100%
       background: url('../img/cloud.svg') no-repeat 50%
-      background-size: 120px
+      background-size: 100px
+  &-back
+    &__icon
+      margin-left: 30px
+      width: 70%
+      height: 100%
+      background: url('../img/back.svg') no-repeat 50%
+      background-size: 130px
+  &-jitsi
+    &__icon
+      width: 70%
+      height: 100%
+      background: url('../img/jitsi.png') no-repeat 50%
+      background-size: 250px
+  &-spark
+    &__icon
+      width: 70%
+      height: 100%
+      background: url('../img/spark.png') no-repeat 50%
+      background-size: 100px
 
 .section
   &-blocks
@@ -102,9 +121,7 @@ a
       flex-wrap: wrap
       justify-content: space-between
       margin-top: 10px
-      opacity: 0.8
     &__button
-      min-height: 200px
       margin-bottom: 10px
 
 @media (max-width: 2500px)
