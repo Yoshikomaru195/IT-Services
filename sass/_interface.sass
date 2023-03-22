@@ -13,7 +13,7 @@ a
   text-decoration: none
 
 .container
-  margin: auto
+  // margin: auto
   
 .main
   width: 60%
@@ -35,7 +35,6 @@ a
   justify-content: center
   align-items: center
   text-align: center
-  flex-basis: 33%
   &__text
     padding: 0px 10px
     display: flex
@@ -95,12 +94,32 @@ a
       background: url('../img/cloud.svg') no-repeat 50%
       background-size: 100px
   &-back
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-top: 10px
+    &__item
+      margin-top: -200px
+      height: 150px
+      min-width: 300px
+      padding: 30px 10px
+      border-radius: 20px
+      transition: all 0.3s ease
+      background-color: rgba(51, 51, 51, 0.8)
+      outline: none
+      display: flex
+      justify-content: center
+      align-items: center
+      text-align: center
+      &:hover
+        background: #2EE59D
+        box-shadow: 0 15px 20px rgba(46, 229, 157, .4)
     &__icon
       margin-left: 30px
       width: 70%
       height: 100%
       background: url('../img/back.svg') no-repeat 50%
-      background-size: 130px
+      background-size: 110px
   &-jitsi
     &__icon
       width: 70%
@@ -116,13 +135,14 @@ a
 
 .section
   &-blocks
-    &_items
+    &__item
       display: flex
       flex-wrap: wrap
       justify-content: space-between
       margin-top: 10px
     &__button
       margin-bottom: 10px
+      flex-basis: 33%
 
 @media (max-width: 2500px)
   body
@@ -188,10 +208,18 @@ a
         min-height: 150px
         flex-basis: 49%
   .btn
+    &-info 
+      &__icon
+        background-size: 90px
     &-cloud
       &__item
         flex-basis: 100%
         margin-right: 10px
+    &-spark
+      &__icon
+        background-size: 80px
+    &-back
+      display: none
 
 @media (max-width: 900px)
   .btn
@@ -215,6 +243,12 @@ a
       &__icon
         display: none
     &-cloud
+      &__icon
+        display: none
+    &-spark
+      &__icon
+        display: none
+    &-jitsi
       &__icon
         display: none
 
@@ -259,6 +293,14 @@ a
         display: block
         width: 50%
         background-size: 80px
+    &-spark
+      &__icon
+        display: block
+        background-size: 80px
+    &-jitsi
+      &__icon
+        display: block
+        background-size: 170px
     &__text
       max-width: 255px
       line-height: 27px
@@ -292,6 +334,12 @@ a
     &-cloud
       &__icon
         background-size: 50px
+    &-spark
+      &__icon
+        background-size: 50px
+    &-jitsi
+      &__icon
+        background-size: 120px
     &__text
       line-height: 18px
       letter-spacing: 0px
@@ -325,7 +373,42 @@ a
       &__icon
         width: 37%
         background-size: 35px
+    &-jitsi
+      &__icon
+        display: none
+    &-spark
+      &__icon
+        width: 37%
+        background-size: 35px
   .section
     &-blocks
       &__button
         margin-bottom: 5px
+
+@media (max-width: 145px)
+  .btn
+    &__text
+      line-height: 10px
+      font-size: 10px
+    &-outlook
+      &__icon
+        display: none
+    &-info
+      &__icon
+        display: none
+    &-otrs 
+      &__icon
+        display: none
+    &-helpdesk
+      &__icon
+        display: none
+    &-cloud
+      &__icon
+        display: none
+    &-spark
+      &__icon
+        display: none
+  .section
+    &-blocks
+      &__button
+        min-height: 30px
